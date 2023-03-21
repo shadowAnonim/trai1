@@ -1,0 +1,19 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AvaloniaApplication1.Pages.AutorisationPage">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="75">Логин:</Label>
+            <TextBox x:Name="LoginTb"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="75">Пароль:</Label>
+            <TextBox x:Name="PasswordTb"></TextBox>
+        </StackPanel>
+        <CheckBox x:Name="PasswordCheckBox" Content="Показать пароль" HorizontalAlignment="Center"></CheckBox>
+        <Button x:Name="LoginBtn" Content="Войти" Click="LoginBtn_OnClick" ></Button>
+    </StackPanel>
+</UserControl>
