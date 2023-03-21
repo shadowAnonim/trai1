@@ -15,6 +15,18 @@ public partial class AutorisationPage : UserControl
     public AutorisationPage()
     {
         InitializeComponent();
+        PasswordCheckBox.Checked += PasswordCheckBoxOnChecked;
+        PasswordCheckBox.Unchecked += PasswordCheckBoxOnUnchecked;
+    }
+
+    private void PasswordCheckBoxOnUnchecked(object? sender, RoutedEventArgs e)
+    {
+        PasswordTb.PasswordChar = '*';
+    }
+
+    private void PasswordCheckBoxOnChecked(object? sender, RoutedEventArgs e)
+    {
+        PasswordTb.PasswordChar = '\0';
     }
 
     private void LoginBtn_OnClick(object? sender, RoutedEventArgs e)

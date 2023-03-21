@@ -11,7 +11,7 @@
         </StackPanel>
         <StackPanel Orientation="Horizontal">
             <Label Width="75">Пароль:</Label>
-            <TextBox x:Name="PasswordTb"></TextBox>
+            <TextBox x:Name="PasswordTb" PasswordChar="*"></TextBox>
         </StackPanel>
         <CheckBox x:Name="PasswordCheckBox" Content="Показать пароль" HorizontalAlignment="Center"></CheckBox>
         <Button x:Name="LoginBtn" Content="Войти" Click="LoginBtn_OnClick" ></Button>

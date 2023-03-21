@@ -6,10 +6,7 @@
         x:Class="AvaloniaApplication1.MainWindow"
         Title="AvaloniaApplication1">
     <Grid ColumnDefinitions="*,*,*" RowDefinitions="Auto,*">
-        <StackPanel>
-            <Button Name="BackBtn" Content="Назад"/>
-            <Button Name="ExitBtn" Content="Выход"/>
-        </StackPanel>
+        <Button Name="ExitBtn" Content="Выход" Click="ExitBtn_OnClick"/>
         <Label Grid.Row="0" Grid.Column="1" Content="Title"/>
         <Image Grid.Row="0" Grid.Column="2"/>
         <ContentControl Name="Frame" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3"/>

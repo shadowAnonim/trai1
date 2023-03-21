@@ -1,4 +1,5 @@
 using Avalonia.Controls;
+using Avalonia.Interactivity;
 using AvaloniaApplication1.Pages;
 using static AvaloniaApplication1.Utils;
 
@@ -12,5 +13,10 @@ public partial class MainWindow : Window
         AppMainWindow = this;
         CurrentPage = this.FindControl<ContentControl>("Frame");
         CurrentPage.Content = new AutorisationPage();
+    }
+
+    private void ExitBtn_OnClick(object? sender, RoutedEventArgs e)
+    {
+        CurrentPage = new AutorisationPage();
     }
 }
